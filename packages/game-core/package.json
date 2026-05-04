@@ -1,0 +1,10 @@
+{
+  "name": "@company-war/game-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./game-logic.js"
+  }
+}
+

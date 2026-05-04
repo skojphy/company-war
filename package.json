@@ -1,0 +1,25 @@
+{
+  "name": "company-war",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace @company-war/web run dev",
+    "build": "npm --workspace @company-war/web run build",
+    "check": "npm --workspace @company-war/web run check",
+    "test": "node packages/game-core/game-logic.test.js"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.3.1",
+    "@sveltejs/kit": "^2.16.1",
+    "@sveltejs/vite-plugin-svelte": "^5.1.1",
+    "svelte": "^5.19.7",
+    "svelte-check": "^4.1.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}
